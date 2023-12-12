@@ -36,7 +36,7 @@ namespace BasicWebApi.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Companies");
+                    b.ToTable("Companies", (string)null);
                 });
 
             modelBuilder.Entity("BasicWebApi.Domain.Domain.Contact", b =>
@@ -60,13 +60,11 @@ namespace BasicWebApi.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CompanyId")
-                        .IsUnique();
+                    b.HasIndex("CompanyId");
 
-                    b.HasIndex("CountryId")
-                        .IsUnique();
+                    b.HasIndex("CountryId");
 
-                    b.ToTable("Contacts");
+                    b.ToTable("Contacts", (string)null);
                 });
 
             modelBuilder.Entity("BasicWebApi.Domain.Domain.Country", b =>
@@ -77,6 +75,9 @@ namespace BasicWebApi.DataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("CompanyId")
+                        .HasColumnType("int");
+
                     b.Property<string>("CountryName")
                         .IsRequired()
                         .HasMaxLength(30)
@@ -84,26 +85,51 @@ namespace BasicWebApi.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Countries");
+                    b.HasIndex("CompanyId");
+
+                    b.ToTable("Countries", (string)null);
                 });
 
             modelBuilder.Entity("BasicWebApi.Domain.Domain.Contact", b =>
                 {
                     b.HasOne("BasicWebApi.Domain.Domain.Company", "Company")
-                        .WithOne()
-                        .HasForeignKey("BasicWebApi.Domain.Domain.Contact", "CompanyId")
+                        .WithMany("Contacts")
+                        .HasForeignKey("CompanyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("BasicWebApi.Domain.Domain.Country", "Country")
-                        .WithOne()
-                        .HasForeignKey("BasicWebApi.Domain.Domain.Contact", "CountryId")
+                        .WithMany("Contacts")
+                        .HasForeignKey("CountryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Company");
 
                     b.Navigation("Country");
+                });
+
+            modelBuilder.Entity("BasicWebApi.Domain.Domain.Country", b =>
+                {
+                    b.HasOne("BasicWebApi.Domain.Domain.Company", "Company")
+                        .WithMany("Countries")
+                        .HasForeignKey("CompanyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Company");
+                });
+
+            modelBuilder.Entity("BasicWebApi.Domain.Domain.Company", b =>
+                {
+                    b.Navigation("Contacts");
+
+                    b.Navigation("Countries");
+                });
+
+            modelBuilder.Entity("BasicWebApi.Domain.Domain.Country", b =>
+                {
+                    b.Navigation("Contacts");
                 });
 #pragma warning restore 612, 618
         }

@@ -3,6 +3,8 @@
     using BasicWebApi.DataAccess;
     using BasicWebApi.DataAccess.Repositories.Implementations;
     using BasicWebApi.DataAccess.Repositories.Interfaces;
+    using BasicWebApi.Services.Implementations;
+    using BasicWebApi.Services.Interfaces;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.DependencyInjection;
 
@@ -15,7 +17,14 @@
 
         public static void InjectRepositories(this IServiceCollection services)
         {
-            //services.AddTransient<ICompanyRepository, CompanyRepository>();
+            services.AddTransient<ICompanyRepository, CompanyRepository>();
+            services.AddTransient<ICountryRepository, CountryRepository>();
+        }
+
+        public static void InjectServices(this IServiceCollection services)
+        {
+            services.AddTransient<ICompanyService, CompanyService>();
+            services.AddTransient<ICountryService, CountryService>();
         }
     }
 }

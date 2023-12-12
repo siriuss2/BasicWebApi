@@ -1,0 +1,17 @@
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.Mappers\bin\Debug\net6.0\BasicWebApi.Mappers.deps.json
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.Mappers\bin\Debug\net6.0\BasicWebApi.Mappers.dll
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.Mappers\bin\Debug\net6.0\BasicWebApi.Mappers.pdb
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.Mappers\bin\Debug\net6.0\BasicWebApi.Domain.dll
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.Mappers\bin\Debug\net6.0\BasicWebApi.DTOs.dll
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.Mappers\bin\Debug\net6.0\BasicWebApi.Domain.pdb
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.Mappers\bin\Debug\net6.0\BasicWebApi.DTOs.pdb
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.Mappers\obj\Debug\net6.0\BasicWebApi.Mappers.csproj.AssemblyReference.cache
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.Mappers\obj\Debug\net6.0\BasicWebApi.Mappers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.Mappers\obj\Debug\net6.0\BasicWebApi.Mappers.AssemblyInfoInputs.cache
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.Mappers\obj\Debug\net6.0\BasicWebApi.Mappers.AssemblyInfo.cs
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.Mappers\obj\Debug\net6.0\BasicWebApi.Mappers.csproj.CoreCompileInputs.cache
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.Mappers\obj\Debug\net6.0\BasicWebApi.Mappers.csproj.CopyComplete
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.Mappers\obj\Debug\net6.0\BasicWebApi.Mappers.dll
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.Mappers\obj\Debug\net6.0\refint\BasicWebApi.Mappers.dll
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.Mappers\obj\Debug\net6.0\BasicWebApi.Mappers.pdb
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.Mappers\obj\Debug\net6.0\ref\BasicWebApi.Mappers.dll

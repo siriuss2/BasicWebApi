@@ -2,34 +2,49 @@
 {
     using BasicWebApi.DataAccess.Repositories.Interfaces;
     using BasicWebApi.Domain.Domain;
+    using Microsoft.EntityFrameworkCore;
     using System.Collections.Generic;
     using System.Threading.Tasks;
 
     public class CompanyRepository : ICompanyRepository
     {
-        public Task<int> CreateAsync(Company entity)
-        {
-            throw new NotImplementedException();
-        }
+        private readonly BasicWebApiDbContext _dbContext;
 
-        public Task DeleteAsync(int id)
+        public CompanyRepository(BasicWebApiDbContext _dbContext)
         {
-            throw new NotImplementedException();
+            this._dbContext = _dbContext;
         }
-
-        public Task<List<Company>> GetAllAsync()
+        public async Task<List<Company>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return await _dbContext.Companies.ToListAsync();
         }
-
-        public Task<Company> GetByIdAsync(int id)
+        public async Task<Company> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _dbContext.Companies.FirstOrDefaultAsync(x => x.Id == id);
         }
-
-        public Task<Company> UpdateAsync(Company entity)
+        public async Task<int> CreateAsync(Company entity)
         {
-            throw new NotImplementedException();
+            await _dbContext.Companies.AddAsync(entity);
+            await _dbContext.SaveChangesAsync();
+
+            return entity.Id;
+        }
+        public async Task<Company> UpdateAsync(Company entity)
+        {
+            _dbContext.Companies.Add(entity);
+            await _dbContext.SaveChangesAsync();
+
+            return entity;
+        }
+        public async Task DeleteAsync(int id)
+        {
+            Company companyDb = await _dbContext.Companies.SingleOrDefaultAsync(x => x.Id == id);
+
+            if (companyDb == null)
+                throw new Exception($"Company with id:{id} not found!");
+
+            _dbContext.Companies.Remove(companyDb);
+            await _dbContext.SaveChangesAsync();
         }
     }
 }

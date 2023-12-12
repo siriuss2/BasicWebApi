@@ -16,6 +16,7 @@ AppSettings appSettingsObject = appSettings.Get<AppSettings>();
 
 builder.Services.InjectDbContext(appSettingsObject.ConnectionString);
 builder.Services.InjectRepositories();
+builder.Services.InjectServices();
 
 var app = builder.Build();
 

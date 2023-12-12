@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BasicWebApi.DataAccess\BasicWebApi.DataAccess.csproj" />
+    <ProjectReference Include="..\BasicWebApi.DTOs\BasicWebApi.DTOs.csproj" />
+    <ProjectReference Include="..\BasicWebApi.Mappers\BasicWebApi.Mappers.csproj" />
+  </ItemGroup>
+
+</Project>

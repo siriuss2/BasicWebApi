@@ -699,14 +699,39 @@
           "BasicWebApi.Domain.dll": {}
         }
       },
+      "BasicWebApi.DTOs/1.0.0": {
+        "runtime": {
+          "BasicWebApi.DTOs.dll": {}
+        }
+      },
       "BasicWebApi.Helpers/1.0.0": {
         "dependencies": {
           "BasicWebApi.DataAccess": "1.0.0",
+          "BasicWebApi.Services": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.14"
         },
         "runtime": {
           "BasicWebApi.Helpers.dll": {}
+        }
+      },
+      "BasicWebApi.Mappers/1.0.0": {
+        "dependencies": {
+          "BasicWebApi.DTOs": "1.0.0",
+          "BasicWebApi.Domain": "1.0.0"
+        },
+        "runtime": {
+          "BasicWebApi.Mappers.dll": {}
+        }
+      },
+      "BasicWebApi.Services/1.0.0": {
+        "dependencies": {
+          "BasicWebApi.DTOs": "1.0.0",
+          "BasicWebApi.DataAccess": "1.0.0",
+          "BasicWebApi.Mappers": "1.0.0"
+        },
+        "runtime": {
+          "BasicWebApi.Services.dll": {}
         }
       }
     }
@@ -1182,7 +1207,22 @@
       "serviceable": false,
       "sha512": ""
     },
+    "BasicWebApi.DTOs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "BasicWebApi.Helpers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BasicWebApi.Mappers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BasicWebApi.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

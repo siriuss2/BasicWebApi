@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicWebApi.App", "BasicWebApi.App\BasicWebApi.App.csproj", "{10771423-D159-4791-A4BA-C01B9A6B116D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicWebApi.App", "BasicWebApi.App\BasicWebApi.App.csproj", "{10771423-D159-4791-A4BA-C01B9A6B116D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicWebApi.DataAccess", "BasicWebApi.DataAccess\BasicWebApi.DataAccess.csproj", "{BA1FA84E-E937-432D-BC4D-88B47605CE52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicWebApi.DataAccess", "BasicWebApi.DataAccess\BasicWebApi.DataAccess.csproj", "{BA1FA84E-E937-432D-BC4D-88B47605CE52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicWebApi.Domain", "BasicWebApi.Domain\BasicWebApi.Domain.csproj", "{FB5FC1DF-AB48-415B-B8EA-C3D771D5DB8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicWebApi.Domain", "BasicWebApi.Domain\BasicWebApi.Domain.csproj", "{FB5FC1DF-AB48-415B-B8EA-C3D771D5DB8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicWebApi.Helpers", "BasicWebApi.Helpers\BasicWebApi.Helpers.csproj", "{62F5C04F-6929-4935-9FEC-145012B04B22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicWebApi.Helpers", "BasicWebApi.Helpers\BasicWebApi.Helpers.csproj", "{62F5C04F-6929-4935-9FEC-145012B04B22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicWebApi.Services", "BasicWebApi.Services\BasicWebApi.Services.csproj", "{F858B0E2-B59D-49D8-B890-2445D8F3CD97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicWebApi.DTOs", "BasicWebApi.DTOs\BasicWebApi.DTOs.csproj", "{2CF7FBAD-DEDA-40D7-A83B-92EB53570BC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicWebApi.Mappers", "BasicWebApi.Mappers\BasicWebApi.Mappers.csproj", "{8E206DE4-C858-4304-AFF3-403E9533EE0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{62F5C04F-6929-4935-9FEC-145012B04B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62F5C04F-6929-4935-9FEC-145012B04B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62F5C04F-6929-4935-9FEC-145012B04B22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F858B0E2-B59D-49D8-B890-2445D8F3CD97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F858B0E2-B59D-49D8-B890-2445D8F3CD97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F858B0E2-B59D-49D8-B890-2445D8F3CD97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F858B0E2-B59D-49D8-B890-2445D8F3CD97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CF7FBAD-DEDA-40D7-A83B-92EB53570BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CF7FBAD-DEDA-40D7-A83B-92EB53570BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CF7FBAD-DEDA-40D7-A83B-92EB53570BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CF7FBAD-DEDA-40D7-A83B-92EB53570BC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E206DE4-C858-4304-AFF3-403E9533EE0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E206DE4-C858-4304-AFF3-403E9533EE0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E206DE4-C858-4304-AFF3-403E9533EE0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E206DE4-C858-4304-AFF3-403E9533EE0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

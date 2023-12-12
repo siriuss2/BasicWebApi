@@ -18,6 +18,21 @@
         {
             base.OnModelCreating(modelBuilder);
 
+            modelBuilder.Entity<Company>()
+                .HasMany(x => x.Contacts)
+                .WithOne(x => x.Company)
+                .HasForeignKey(x => x.CompanyId);
+
+            modelBuilder.Entity<Company>()
+                .HasMany(x => x.Countries)
+                .WithOne(x => x.Company)
+                .HasForeignKey(x => x.CompanyId);
+
+            modelBuilder.Entity<Country>()
+                .HasMany(x => x.Contacts)
+                .WithOne(x => x.Country)
+                .HasForeignKey(x => x.CountryId);
+
             modelBuilder.Entity<Country>()
                 .Property(x => x.CountryName)
                 .HasMaxLength(30);
@@ -29,16 +44,6 @@
             modelBuilder.Entity<Contact>()
                 .Property(x => x.ContactName)
                 .HasMaxLength(30);
-
-            modelBuilder.Entity<Contact>()
-                .HasOne(x => x.Company)
-                .WithOne()
-                .HasForeignKey<Contact>(x => x.CompanyId);
-
-            modelBuilder.Entity<Contact>()
-                .HasOne(x => x.Country)
-                .WithOne()
-                .HasForeignKey<Contact>(x => x.CountryId);
         }
     }
 }

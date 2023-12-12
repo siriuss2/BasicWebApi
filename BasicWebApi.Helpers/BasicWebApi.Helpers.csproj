@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BasicWebApi.DataAccess\BasicWebApi.DataAccess.csproj" />
+    <ProjectReference Include="..\BasicWebApi.Services\BasicWebApi.Services.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1089,6 +1089,45 @@
         "runtime": {
           "bin/placeholder/BasicWebApi.Domain.dll": {}
         }
+      },
+      "BasicWebApi.DTOs/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BasicWebApi.DTOs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BasicWebApi.DTOs.dll": {}
+        }
+      },
+      "BasicWebApi.Mappers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BasicWebApi.DTOs": "1.0.0",
+          "BasicWebApi.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BasicWebApi.Mappers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BasicWebApi.Mappers.dll": {}
+        }
+      },
+      "BasicWebApi.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BasicWebApi.DTOs": "1.0.0",
+          "BasicWebApi.DataAccess": "1.0.0",
+          "BasicWebApi.Mappers": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BasicWebApi.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BasicWebApi.Services.dll": {}
+        }
       }
     }
   },
@@ -2921,11 +2960,27 @@
       "type": "project",
       "path": "../BasicWebApi.Domain/BasicWebApi.Domain.csproj",
       "msbuildProject": "../BasicWebApi.Domain/BasicWebApi.Domain.csproj"
+    },
+    "BasicWebApi.DTOs/1.0.0": {
+      "type": "project",
+      "path": "../BasicWebApi.DTOs/BasicWebApi.DTOs.csproj",
+      "msbuildProject": "../BasicWebApi.DTOs/BasicWebApi.DTOs.csproj"
+    },
+    "BasicWebApi.Mappers/1.0.0": {
+      "type": "project",
+      "path": "../BasicWebApi.Mappers/BasicWebApi.Mappers.csproj",
+      "msbuildProject": "../BasicWebApi.Mappers/BasicWebApi.Mappers.csproj"
+    },
+    "BasicWebApi.Services/1.0.0": {
+      "type": "project",
+      "path": "../BasicWebApi.Services/BasicWebApi.Services.csproj",
+      "msbuildProject": "../BasicWebApi.Services/BasicWebApi.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "BasicWebApi.DataAccess >= 1.0.0",
+      "BasicWebApi.Services >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.14",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.14",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.14",
@@ -2967,6 +3022,9 @@
           "projectReferences": {
             "C:\\Users\\Dragan\\Desktop\\BasicWebApi\\BasicWebApi.DataAccess\\BasicWebApi.DataAccess.csproj": {
               "projectPath": "C:\\Users\\Dragan\\Desktop\\BasicWebApi\\BasicWebApi.DataAccess\\BasicWebApi.DataAccess.csproj"
+            },
+            "C:\\Users\\Dragan\\Desktop\\BasicWebApi\\BasicWebApi.Services\\BasicWebApi.Services.csproj": {
+              "projectPath": "C:\\Users\\Dragan\\Desktop\\BasicWebApi\\BasicWebApi.Services\\BasicWebApi.Services.csproj"
             }
           }
         }
