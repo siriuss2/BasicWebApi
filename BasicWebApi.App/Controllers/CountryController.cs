@@ -60,7 +60,7 @@
                 if (createCountryDTO == null)
                     return BadRequest("The country can not be null.Please try again!");
 
-                if (string.IsNullOrEmpty(createCountryDTO.CountryName))
+                if (string.IsNullOrEmpty(createCountryDTO.CountryName) || createCountryDTO.CompanyId <= 0)
                     return BadRequest("Please fill all of the parameters!");
 
                 await _countryService.CreateCountryAsync(createCountryDTO);

@@ -9,3 +9,7 @@ C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.DTOs\obj\Debug\net6.0\BasicWebAp
 C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.DTOs\obj\Debug\net6.0\refint\BasicWebApi.DTOs.dll
 C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.DTOs\obj\Debug\net6.0\BasicWebApi.DTOs.pdb
 C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.DTOs\obj\Debug\net6.0\ref\BasicWebApi.DTOs.dll
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.DTOs\bin\Debug\net6.0\BasicWebApi.Domain.dll
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.DTOs\bin\Debug\net6.0\BasicWebApi.Domain.pdb
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.DTOs\obj\Debug\net6.0\BasicWebApi.DTOs.csproj.AssemblyReference.cache
+C:\Users\Dragan\Desktop\BasicWebApi\BasicWebApi.DTOs\obj\Debug\net6.0\BasicWebApi.DTOs.csproj.CopyComplete

@@ -564,6 +564,9 @@
         }
       },
       "BasicWebApi.DTOs/1.0.0": {
+        "dependencies": {
+          "BasicWebApi.Domain": "1.0.0"
+        },
         "runtime": {
           "BasicWebApi.DTOs.dll": {}
         }

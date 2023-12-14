@@ -29,22 +29,12 @@
 
             return entity.Id;
         }
-        public async Task<Company> UpdateAsync(Country entity)
+        public async Task<Country> UpdateAsync(Country entity)
         {
-            Company companyDb = await _dbContext.Companies
-                .Where(x => x.Id == entity.CompanyId) 
-                .FirstOrDefaultAsync();
+            _dbContext.Countries.Update(entity);
+            await _dbContext.SaveChangesAsync();
 
-            if (companyDb != null)
-            {
-                if (!companyDb.Countries.Any(x => x.Id == entity.Id))
-                    companyDb.Countries.Add(entity);
-
-                await _dbContext.SaveChangesAsync();
-                return companyDb;
-            }
-
-            throw new InvalidOperationException("No corresponding Company found for the given Country.");
+            return entity;
         }
         public async Task DeleteAsync(int id)
         {

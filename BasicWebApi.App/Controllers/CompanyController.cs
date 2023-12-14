@@ -70,7 +70,6 @@
             }
         }
 
-        // NOT WORKING
         [HttpPatch]
         public async Task<IActionResult> EditCompany([FromBody] EditCompanyDTO editCompanyDTO)
         {
@@ -105,7 +104,7 @@
                 if(companyDTO == null)
                     return NotFound("Company not found!");
 
-                await _companyService.DeleteCompany(companyDTO.Id);
+                await _companyService.DeleteCompanyAsync(companyDTO.Id);
 
                 return Ok("Deleted successfully!");
             }

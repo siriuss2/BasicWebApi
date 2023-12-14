@@ -31,7 +31,7 @@
         }
         public async Task<Company> UpdateAsync(Company entity)
         {
-            _dbContext.Companies.Add(entity);
+            _dbContext.Companies.Update(entity);
             await _dbContext.SaveChangesAsync();
 
             return entity;

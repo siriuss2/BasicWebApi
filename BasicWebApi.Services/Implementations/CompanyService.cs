@@ -49,7 +49,7 @@
 
             await _companyRepository.UpdateAsync(companyDb);
         }
-        public async Task DeleteCompany(int id)
+        public async Task DeleteCompanyAsync(int id)
         {
             await _companyRepository.DeleteAsync(id);
         }

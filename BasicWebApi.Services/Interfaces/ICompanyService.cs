@@ -8,6 +8,6 @@
         Task<CompanyDTO> GetCompanyByIdAsync(int id);
         Task<int> CreateCompanyAsync(CreateCompanyDTO createCompanyDTO);
         Task EditCompanyAsync(EditCompanyDTO editMovieDTO);
-        Task DeleteCompany(int id);
+        Task DeleteCompanyAsync(int id);
     }
 }

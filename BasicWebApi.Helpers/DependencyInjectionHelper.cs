@@ -19,12 +19,14 @@
         {
             services.AddTransient<ICompanyRepository, CompanyRepository>();
             services.AddTransient<ICountryRepository, CountryRepository>();
+            services.AddTransient<IContactRepository, ContactRepository>();
         }
 
         public static void InjectServices(this IServiceCollection services)
         {
             services.AddTransient<ICompanyService, CompanyService>();
             services.AddTransient<ICountryService, CountryService>();
+            services.AddTransient<IContactService, ContactService>();
         }
     }
 }

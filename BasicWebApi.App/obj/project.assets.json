@@ -1168,6 +1168,9 @@
       "BasicWebApi.DTOs/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BasicWebApi.Domain": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/BasicWebApi.DTOs.dll": {}
         },

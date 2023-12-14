@@ -11,11 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicWebApi.Domain", "Basic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicWebApi.Helpers", "BasicWebApi.Helpers\BasicWebApi.Helpers.csproj", "{62F5C04F-6929-4935-9FEC-145012B04B22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicWebApi.Services", "BasicWebApi.Services\BasicWebApi.Services.csproj", "{F858B0E2-B59D-49D8-B890-2445D8F3CD97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicWebApi.Services", "BasicWebApi.Services\BasicWebApi.Services.csproj", "{F858B0E2-B59D-49D8-B890-2445D8F3CD97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicWebApi.DTOs", "BasicWebApi.DTOs\BasicWebApi.DTOs.csproj", "{2CF7FBAD-DEDA-40D7-A83B-92EB53570BC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicWebApi.DTOs", "BasicWebApi.DTOs\BasicWebApi.DTOs.csproj", "{2CF7FBAD-DEDA-40D7-A83B-92EB53570BC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicWebApi.Mappers", "BasicWebApi.Mappers\BasicWebApi.Mappers.csproj", "{8E206DE4-C858-4304-AFF3-403E9533EE0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicWebApi.Mappers", "BasicWebApi.Mappers\BasicWebApi.Mappers.csproj", "{8E206DE4-C858-4304-AFF3-403E9533EE0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
